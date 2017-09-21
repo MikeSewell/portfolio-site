@@ -129,7 +129,9 @@ a:hover {
 article ul {
   list-style: none;
 }
-
+h2 {
+  color: #ef8354;
+}
 /*  */
 .container {
   padding: 0 7px;
