@@ -53,7 +53,7 @@
 
   <div class="row">
 
-    <p class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><img class="img-fluid" src="./images/javascript.jpg" alt=""></p>
+    <p class="img-hover col-lg-4 col-md-4 col-sm-12 col-xs-12"><img class="img-fluid" src="./images/javascript.jpg" alt=""></p>
     <!-- <div class="grid col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<figure class="effect-dexter">
 						<img src="/images/javascript.jpg" alt="img19"/>
@@ -65,24 +65,24 @@
 					</figure>
         </div> -->
 
-    <p class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><img class="img-fluid" src="./images/tinycat.png" alt=""></p>
+    <p class="img-hover col-lg-4 col-md-4 col-sm-12 col-xs-12"><img class="img-fluid" src="./images/tinycat.png" alt=""></p>
 
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <h2>Message Me</h2>
-      <form>
+      <h2 class="msgMe">Message Me</h2>
+      <form id="contact-form" action="formControl.php" method="POST">
 
           <label class="nameemail" for="name">
-          <input class="form-control" type="text" name="name" placeholder="Name"></label>
+          <input id="name" class="form-control" type="text" name="name" placeholder="Name"></label>
 
 
           <label class="nameemail" for="email">
-          <input class="form-control" type="email" name="email" placeholder="Email"></label>
+          <input id="email" class="form-control" type="email" name="email" placeholder="Email"></label>
 
           <label for="subject">
-          <input class="form-control" type="text" name="subject" placeholder="Subject"></label>
+          <input id="subject" class="form-control" type="text" name="subject" placeholder="Subject"></label>
 
         <label for="message">
-        <textarea class="form-control" placeholder="Message" name="message"></textarea></label>
+        <textarea id="message" class="form-control" placeholder="Message" name="message"></textarea></label>
         <button class="btn btn-block" type="submit" name="button">Send Message</button>
       </form>
     </div>

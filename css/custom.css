@@ -55,6 +55,9 @@
 .mybtn {
   width: 48%;
 }
+.row .msgMe {
+  color: #ef8354;
+}
 
 /* */
 .navbar {
@@ -69,6 +72,17 @@
 .row {
   margin: 0 0;
   padding-top: 2rem;
+}
+.row p {
+  overflow: hidden;
+}
+.row .img-hover {
+  /*box-shadow: 5px 5px 5px #111;*/
+}
+.row .img-hover img:hover {
+  -webkit-filter: blur(5px);
+  transition: all 0.3s ease;
+  transform: scale(1.3);
 }
 .nav-link {
   color: #fff;
