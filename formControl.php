@@ -43,10 +43,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       }
 
       $to = 'mikesewell01@gmail.com';
-      if (mail($to,$name, $email, $subject, $message)){
-          $success = "Message sent, thank you for contacting Me!";
-          $name = $email = $message = $subject = '';
-      }
+
+
+    // e-mail message
+    $real_message = "You have received a message from your website:"
+    ."\nContact Name: $name"
+    ."\nSubject: $subject"
+    ."\nFrom IP: {$_SERVER['REMOTE_ADDR']}"
+    ."\nMessage: $message";
+
+    if (mail($to, $subject, $real_message)){
+        $success = "Message sent, thank you for contacting us!";
+        $name = $email = $subject = $message = '';
+        echo '<script>window.location.href = "http://msewell.com/";</script>';
+    }
   }
 
 }
