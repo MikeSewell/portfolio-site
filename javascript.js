@@ -91,6 +91,7 @@ $(function() {
           stylers: [
             {
               color: "#eeeeee"
+              // color: "#ef8354"
             }
           ]
         },
@@ -117,6 +118,17 @@ $(function() {
           elementType: "all",
           stylers: [
             {
+              visibility: "simplified"
+            }
+          ]
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.fill",
+          stylers: [
+            {
+              color: "#ef8354",
+
               visibility: "simplified"
             }
           ]
