@@ -48,6 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // e-mail message
     $real_message = "You have received a message from your website:"
     ."\nContact Name: $name"
+    ."\nEmail: $email"
     ."\nSubject: $subject"
     ."\nFrom IP: {$_SERVER['REMOTE_ADDR']}"
     ."\nMessage: $message";
