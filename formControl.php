@@ -44,7 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       $to = 'mikesewell01@gmail.com';
 
-
     // e-mail message
     $real_message = "You have received a message from your website:"
     ."\nContact Name: $name"
